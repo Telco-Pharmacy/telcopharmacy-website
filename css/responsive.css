@@ -256,3 +256,100 @@
     }
 
 }
+
+/* =====================================
+   ADDITIONAL MOBILE CONTACT RESPONSIVE
+===================================== */
+
+@media (max-width:768px){
+
+    .contact-section{
+
+        padding:50px 5%;
+
+    }
+
+    .contact-section h2{
+
+        font-size:32px;
+
+    }
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .contact-card{
+
+        padding:25px 20px;
+
+    }
+
+    .appointment-form{
+
+        padding:25px 20px;
+
+    }
+
+}
+
+
+/* =====================================
+   VERY SMALL PHONES
+===================================== */
+
+@media (max-width:480px){
+
+    .hero h1{
+
+        font-size:32px;
+
+    }
+
+    .hero h2{
+
+        font-size:22px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .logo{
+
+        width:100px;
+
+    }
+
+    .contact-section h2{
+
+        font-size:28px;
+
+    }
+
+    .contact-card{
+
+        padding:20px 15px;
+
+    }
+
+    .appointment-form{
+
+        padding:20px 15px;
+
+    }
+
+    .submit-btn{
+
+        width:100%;
+
+    }
+
+}
