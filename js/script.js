@@ -1,89 +1,162 @@
+/* ==========================================
+   TELCO PHARMACY
+   MAIN JAVASCRIPT
+========================================== */
+
+
+/* ==========================================
+   MOBILE NAVIGATION
+========================================== */
+
 const menu = document.getElementById("mobile-menu");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links a");
 
-menu.addEventListener("click", () => {
+if (menu && navLinks) {
 
-    navLinks.classList.toggle("active");
+    menu.addEventListener("click", () => {
 
-    if(navLinks.classList.contains("active")){
+        navLinks.classList.toggle("active");
 
-        menu.innerHTML = "✕";
+        if (navLinks.classList.contains("active")) {
 
-    }else{
+            menu.innerHTML = "✕";
 
-        menu.innerHTML = "☰";
+        } else {
 
-    }
+            menu.innerHTML = "☰";
 
-});
+        }
+
+    });
+
+}
+
 
 links.forEach(link => {
 
     link.addEventListener("click", () => {
 
-        navLinks.classList.remove("active");
+        if (navLinks) {
 
-        menu.innerHTML = "☰";
+            navLinks.classList.remove("active");
+
+        }
+
+        if (menu) {
+
+            menu.innerHTML = "☰";
+
+        }
 
     });
 
 });
 
-/* ===========================
-   Appointment Form
-=========================== */
 
-const appointmentForm = document.getElementById("appointmentForm");
+/* ==========================================
+   EMAILJS INITIALIZATION
+========================================== */
+
+if (typeof emailjs !== "undefined" && typeof APP_CONFIG !== "undefined") {
+
+    emailjs.init({
+
+        publicKey: APP_CONFIG.EMAILJS.PUBLIC_KEY
+
+    });
+
+}
+
+
+/* ==========================================
+   APPOINTMENT FORM
+========================================== */
+
+const appointmentForm =
+    document.getElementById("appointmentForm");
+
 
 if (appointmentForm) {
 
-    appointmentForm.addEventListener("submit", function(event){
+    appointmentForm.addEventListener(
+        "submit",
+        function (event) {
 
-    event.preventDefault();
+            event.preventDefault();
 
-    const formData = {
 
-        fullname: document.getElementById("fullname").value,
+            const formData = {
 
-        email: document.getElementById("email").value,
+                fullname:
+                    document.getElementById("fullname").value,
 
-        phone: document.getElementById("phone").value,
+                email:
+                    document.getElementById("email").value,
 
-        service: document.getElementById("service").value,
+                phone:
+                    document.getElementById("phone").value,
 
-        message: document.getElementById("message").value
+                service:
+                    document.getElementById("service").value,
 
-    };
+                message:
+                    document.getElementById("message").value
 
-    emailjs.send(
+            };
 
-    APP_CONFIG.EMAILJS.SERVICE_ID,
 
-    APP_CONFIG.EMAILJS.TEMPLATE_ID,
+            emailjs.send(
 
-    formData
+                APP_CONFIG.EMAILJS.SERVICE_ID,
 
-)
+                APP_CONFIG.EMAILJS.TEMPLATE_ID,
 
-    .then(function () {
+                formData
 
-    const successMessage = document.getElementById("successMessage");
+            )
 
-    successMessage.style.display = "block";
+            .then(function () {
 
-    successMessage.scrollIntoView({
-        behavior: "smooth"
-    });
+                const successMessage =
+                    document.getElementById(
+                        "successMessage"
+                    );
 
-    appointmentForm.reset();
 
-})
+                if (successMessage) {
 
-.catch(function (error) {
+                    successMessage.style.display = "block";
 
-    alert("Unable to send your appointment request at the moment. Please try again or contact us on WhatsApp.");
+                    successMessage.scrollIntoView({
 
-    console.error(error);
+                        behavior: "smooth"
 
-});
+                    });
+
+                }
+
+
+                appointmentForm.reset();
+
+            })
+
+
+            .catch(function (error) {
+
+                alert(
+                    "Unable to send your appointment request at the moment. Please try again or contact us on WhatsApp."
+                );
+
+                console.error(
+                    "EmailJS Error:",
+                    error
+                );
+
+            });
+
+        }
+
+    );
+
+}
