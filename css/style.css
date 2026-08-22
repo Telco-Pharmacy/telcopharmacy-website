@@ -1,15 +1,12 @@
-@import url("hero.css");
-@import url("navigation.css");
-@import url("services.css");
-@import url("gallery.css");
-@import url("portal.css");
-@import url("contact.css");
-@import url("footer.css");
-@import url("responsive.css");
+/* =========================================================
+   TELCO PHARMACY & STORES
+   COMBINED MAIN STYLESHEET
+========================================================= */
 
-/* ===========================
+
+/* =========================================================
    GENERAL STYLES
-=========================== */
+========================================================= */
 
 *{
     margin:0;
@@ -18,77 +15,787 @@
 }
 
 body{
-
     font-family:Arial, Helvetica, sans-serif;
-
     background:#f5f9ff;
-
     color:#333;
-
     line-height:1.6;
-
 }
 
-/* ===========================
-   HEADER
-=========================== */
-
-
-/* ===========================
-   MAIN CONTENT
-=========================== */
-
 main{
-
     width:90%;
-
     margin:auto;
-
     padding:50px 0;
-
 }
 
 section{
-
     background:white;
-
     padding:40px;
-
     border-radius:12px;
-
     box-shadow:0 4px 15px rgba(0,0,0,.1);
-
 }
 
 section h2{
-
     color:#0056D2;
-
     margin-bottom:20px;
-
 }
 
 section p{
-
     font-size:18px;
-
 }
 
-/* ===========================
-   FOOTER
-=========================== */
 
-footer{
+/* =========================================================
+   HERO
+========================================================= */
 
-    background:#003d99;
+.hero{
+    background-image:url("../images/pharmacy-front.webp");
+    background-size:cover;
+    background-position:center;
+    height:700px;
+}
 
-    color:white;
-
+.overlay{
+    background:rgba(0,40,90,.55);
+    height:700px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-
-    padding:25px;
-
-    margin-top:50px;
-
+    color:white;
 }
 
+.logo{
+    width:150px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.btn{
+    background:#0056D2;
+    color:white;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:8px;
+    margin:10px;
+    display:inline-block;
+}
+
+.btn2{
+    background:#25D366;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+nav{
+    background:#003d99;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 30px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#00ff99;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:34px;
+    color:white;
+    cursor:pointer;
+    background:#0056D2;
+    padding:10px 16px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.menu-toggle:hover{
+    background:#0077ff;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services{
+    margin-top:60px;
+}
+
+.services h2{
+    text-align:center;
+    color:#0056D2;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.service-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+
+.service-card h3{
+    color:#0056D2;
+    margin-bottom:20px;
+}
+
+.service-card p{
+    margin-bottom:20px;
+}
+
+.service-card a{
+    color:#0056D2;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+/* =========================================================
+   WHY CHOOSE US
+========================================================= */
+
+.why-us{
+    margin:80px 0;
+}
+
+.why-us h2{
+    text-align:center;
+    color:#0056D2;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.why-intro{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 50px;
+    font-size:20px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.why-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 6px 18px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.why-card h3{
+    color:#0056D2;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    line-height:1.8;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery{
+    margin:80px 0;
+}
+
+.gallery h2{
+    text-align:center;
+    color:#0056D2;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.gallery-intro{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:40px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+    box-shadow:0 12px 30px rgba(0,0,0,.20);
+}
+
+
+/* =========================================================
+   PATIENT PORTAL
+========================================================= */
+
+.portal-preview{
+    margin-top:80px;
+    margin-bottom:80px;
+}
+
+.portal-preview h2{
+    text-align:center;
+    color:#0056D2;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.portal-intro{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:45px;
+}
+
+.portal-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.portal-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.portal-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.portal-card h3{
+    color:#0056D2;
+    margin-bottom:20px;
+}
+
+.portal-card p{
+    margin-bottom:25px;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+========================================================= */
+
+.success-message{
+    display:none;
+    background:#d4edda;
+    color:#155724;
+    border:1px solid #c3e6cb;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:30px;
+    text-align:center;
+    animation:fadeIn .5s;
+}
+
+.success-message h3{
+    margin-bottom:10px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section{
+    padding:80px 10%;
+    background:#f5f9ff;
+}
+
+.contact-section h2{
+    text-align:center;
+    color:#0056D2;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact-intro{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:50px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.appointment-form{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:25px;
+}
+
+.form-group label{
+    font-weight:bold;
+    margin-bottom:8px;
+    color:#0056D2;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#0056D2;
+    outline:none;
+    box-shadow:0 0 8px rgba(0,86,210,.25);
+}
+
+.form-group textarea{
+    resize:vertical;
+}
+
+.submit-btn{
+    background:#0056D2;
+    color:white;
+    border:none;
+    padding:16px 35px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#003d99;
+    transform:translateY(-3px);
+}
+
+
+/* =========================================================
+   CONTACT INFORMATION
+========================================================= */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(
+        auto-fit,
+        minmax(250px,1fr)
+    );
+    gap:30px;
+    max-width:1100px;
+    margin:50px auto 0;
+}
+
+.contact-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.contact-card h3{
+    color:#0056D2;
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.contact-card p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+.contact-card a{
+    color:#0056D2;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact-card a:hover{
+    text-decoration:underline;
+}
+
+
+/* =========================================================
+   GOOGLE MAPS BUTTON
+========================================================= */
+
+.map-button{
+    text-align:center;
+    margin-top:40px;
+}
+
+.map-button .btn{
+    display:inline-block;
+    background:#0056D2;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.map-button .btn:hover{
+    background:#003d99;
+    transform:translateY(-3px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer{
+    background:#003d99;
+    color:white;
+    padding:60px 10%;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+.footer-column h3{
+    margin-bottom:20px;
+    color:#00ffcc;
+}
+
+.footer-column p{
+    margin-bottom:12px;
+    line-height:1.8;
+}
+
+.footer-column a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin-bottom:12px;
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:#00ff99;
+}
+
+.footer hr{
+    margin:40px 0;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.copyright{
+    text-align:center;
+    font-size:15px;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+/* Tablets */
+@media (max-width:992px){
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:20px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+
+/* Mobile Phones */
+@media (max-width:768px){
+
+    nav{
+        padding:15px;
+    }
+
+    nav a{
+        display:block;
+        margin:12px 0;
+    }
+
+    .hero{
+        height:auto;
+    }
+
+    .overlay{
+        height:auto;
+        padding:120px 20px 80px;
+    }
+
+    .logo{
+        width:120px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:26px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        max-width:300px;
+    }
+
+    .btn{
+        margin:10px 0;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        overflow:hidden;
+        max-height:0;
+        opacity:0;
+        transform:translateY(-10px);
+        transition:max-height .4s ease,
+                   opacity .3s ease;
+    }
+
+    .nav-links.active{
+        max-height:500px;
+        opacity:1;
+        transform:translateY(0);
+        margin-top:15px;
+        background:white;
+        border-radius:10px;
+        box-shadow:0 8px 25px rgba(0,0,0,.15);
+    }
+
+    .nav-links a{
+        color:#003d99;
+        padding:15px 20px;
+        border-bottom:1px solid #eeeeee;
+    }
+
+    .nav-links a:last-child{
+        border-bottom:none;
+    }
+
+    .nav-links a:hover{
+        background:#f5f9ff;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .portal-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .contact-section{
+        padding:50px 5%;
+    }
+
+    .contact-section h2{
+        font-size:32px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .contact-card{
+        padding:25px 20px;
+    }
+
+    .appointment-form{
+        padding:25px 20px;
+    }
+}
+
+
+/* Very Small Phones */
+@media (max-width:480px){
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .logo{
+        width:100px;
+    }
+
+    .contact-section h2{
+        font-size:28px;
+    }
+
+    .contact-card{
+        padding:20px 15px;
+    }
+
+    .appointment-form{
+        padding:20px 15px;
+    }
+
+    .submit-btn{
+        width:100%;
+    }
+}
