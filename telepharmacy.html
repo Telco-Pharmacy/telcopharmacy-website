@@ -3,272 +3,199 @@
 
 <head>
 
-    <!-- =====================================================
-         BASIC META
-    ====================================================== -->
-
+    <!-- =========================
+         BASIC SEO
+    ========================== -->
     <meta charset="UTF-8">
 
     <meta
         name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+        content="width=device-width, initial-scale=1.0">
 
     <title>
-        Telepharmacy Consultation | Telco Pharmacy & Stores
+        Telepharmacy Consultation | Telco Pharmacy & Stores | Abuja
     </title>
 
     <meta
         name="description"
-        content="Connect with Telco Pharmacy & Stores for online telepharmacy consultations, pharmacist support, appointment booking, WhatsApp assistance and secure video consultations."
-    >
+        content="Book a telepharmacy consultation with Telco Pharmacy & Stores in Abuja. Schedule an appointment through Calendly and join your private video consultation through Doxy.me.">
 
     <meta
         name="keywords"
-        content="Telepharmacy Abuja, Online Pharmacist Nigeria, Pharmacy Consultation Abuja, Telco Pharmacy, Doxy.me Pharmacy, Digital Healthcare Nigeria"
-    >
+        content="Telepharmacy Abuja, online pharmacist consultation, pharmacy consultation Nigeria, Telco Pharmacy, Doxy.me consultation, pharmacy appointment Abuja">
 
     <meta
         name="author"
-        content="Telco Pharmacy & Stores"
-    >
+        content="Telco Pharmacy & Stores">
 
     <meta
         name="robots"
-        content="index, follow"
-    >
+        content="index, follow">
 
-
-    <!-- =====================================================
-         CANONICAL
-    ====================================================== -->
-
+    <!-- Canonical -->
     <link
         rel="canonical"
-        href="https://telcopharmacy.health/telepharmacy.html"
-    >
+        href="https://telcopharmacy.health/telepharmacy.html">
 
 
-    <!-- =====================================================
+    <!-- =========================
          FAVICON
-    ====================================================== -->
+    ========================== -->
 
     <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="favicon-16.png"
-    >
+        href="favicon-16.png">
 
     <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="favicon-32.png"
-    >
+        href="favicon-32.png">
 
     <link
         rel="apple-touch-icon"
-        href="apple-touch-icon.png"
-    >
+        href="apple-touch-icon.png">
 
 
-    <!-- =====================================================
-         MAIN WEBSITE CSS
-    ====================================================== -->
-
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
-
-
-    <!-- =====================================================
+    <!-- =========================
          OPEN GRAPH
-    ====================================================== -->
-
-    <meta
-        property="og:type"
-        content="website"
-    >
+    ========================== -->
 
     <meta
         property="og:title"
-        content="Telepharmacy Consultation | Telco Pharmacy & Stores"
-    >
+        content="Telepharmacy Consultation | Telco Pharmacy & Stores">
 
     <meta
         property="og:description"
-        content="Connect with Telco Pharmacy & Stores for convenient online pharmacist support, appointment booking and video consultation."
-    >
+        content="Book a telepharmacy consultation with Telco Pharmacy & Stores and connect with a pharmacist online.">
+
+    <meta
+        property="og:type"
+        content="website">
 
     <meta
         property="og:url"
-        content="https://telcopharmacy.health/telepharmacy.html"
-    >
+        content="https://telcopharmacy.health/telepharmacy.html">
 
     <meta
         property="og:image"
-        content="https://telcopharmacy.health/images/social/social-preview.jpg"
-    >
+        content="https://telcopharmacy.health/images/pharmacy-front.webp">
+
+    <meta
+        property="og:site_name"
+        content="Telco Pharmacy & Stores">
 
 
-    <!-- =====================================================
+    <!-- =========================
          TWITTER CARD
-    ====================================================== -->
+    ========================== -->
 
     <meta
         name="twitter:card"
-        content="summary_large_image"
-    >
+        content="summary_large_image">
 
     <meta
         name="twitter:title"
-        content="Telepharmacy Consultation | Telco Pharmacy & Stores"
-    >
+        content="Telepharmacy Consultation | Telco Pharmacy & Stores">
 
     <meta
         name="twitter:description"
-        content="Online telepharmacy consultation and digital pharmacist support from Telco Pharmacy & Stores."
-    >
+        content="Book your online telepharmacy consultation with Telco Pharmacy & Stores.">
 
     <meta
         name="twitter:image"
-        content="https://telcopharmacy.health/images/social/social-preview.jpg"
-    >
+        content="https://telcopharmacy.health/images/pharmacy-front.webp">
 
 
-    <!-- =====================================================
-         PAGE-SPECIFIC TELEPHARMACY CSS
-    ====================================================== -->
+    <!-- =========================
+         MAIN WEBSITE CSS
+    ========================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+
+    <!-- =========================
+         PAGE-SPECIFIC STYLES
+    ========================== -->
 
     <style>
 
-        /* =================================================
+        /* =========================================
            TELEPHARMACY HERO
-        ================================================= */
+        ========================================= */
 
         .telepharmacy-hero {
-
-            position: relative;
-
-            min-height: 620px;
 
             background-image:
                 linear-gradient(
                     rgba(0, 45, 100, 0.68),
                     rgba(0, 45, 100, 0.68)
                 ),
-                url("../images/pharmacy-front.webp");
+                url("images/pharmacy-front.webp");
 
             background-size: cover;
-
             background-position: center;
 
-            background-repeat: no-repeat;
+            min-height: 520px;
 
-            color: white;
+            display: flex;
+            flex-direction: column;
+
         }
 
 
-        /* =================================================
-           NAVIGATION
-        ================================================= */
+        .telepharmacy-overlay {
 
-        .telepharmacy-hero nav {
-
-            position: sticky;
-
-            top: 0;
-
-            z-index: 1000;
-
-            background: #003d99;
+            flex: 1;
 
             display: flex;
-
-            justify-content: flex-end;
-
-            align-items: center;
-
-            padding: 18px 30px;
-        }
-
-
-        /* =================================================
-           HERO CONTENT
-        ================================================= */
-
-        .telepharmacy-hero-content {
-
-            min-height: 500px;
-
-            display: flex;
-
             flex-direction: column;
 
             justify-content: center;
-
             align-items: center;
 
             text-align: center;
 
-            padding: 60px 20px;
+            color: white;
+
+            padding: 80px 20px 60px;
+
         }
 
 
-        /* =================================================
-           LOGO
-        ================================================= */
+        .telepharmacy-overlay h1 {
 
-        .telepharmacy-logo {
-
-            width: 150px;
-
-            height: auto;
+            font-size: 48px;
 
             margin-bottom: 20px;
-        }
-
-
-        /* =================================================
-           HERO TITLE
-        ================================================= */
-
-        .telepharmacy-hero-content h1 {
-
-            font-size: 52px;
 
             line-height: 1.2;
 
-            margin-bottom: 20px;
-
-            text-shadow:
-                0 2px 6px rgba(0,0,0,.35);
         }
 
 
-        /* =================================================
-           HERO DESCRIPTION
-        ================================================= */
-
-        .telepharmacy-hero-content p {
+        .telepharmacy-overlay p {
 
             max-width: 850px;
 
-            font-size: 21px;
+            font-size: 20px;
 
             line-height: 1.7;
 
             margin-bottom: 30px;
+
         }
 
 
-        /* =================================================
-           HERO BUTTONS
-        ================================================= */
+        /* =========================================
+           BUTTON GROUP
+        ========================================= */
 
-        .telepharmacy-hero-buttons {
+        .telepharmacy-buttons {
 
             display: flex;
 
@@ -276,70 +203,27 @@
 
             align-items: center;
 
+            gap: 15px;
+
             flex-wrap: wrap;
 
-            gap: 10px;
         }
 
 
-        .doxy-button {
+        .telepharmacy-buttons .btn {
 
-            background: #0056D2;
+            text-decoration: none;
+
+            display: inline-block;
+
         }
 
 
-        .doxy-button:hover {
+        /* =========================================
+           GENERAL SECTION
+        ========================================= */
 
-            background: #003d99;
-        }
-
-
-        /* =================================================
-           INTRO
-        ================================================= */
-
-        .telepharmacy-intro {
-
-            max-width: 950px;
-
-            margin: 70px auto 40px;
-
-            padding: 30px;
-
-            text-align: center;
-
-            background: white;
-
-            border-radius: 15px;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,.08);
-        }
-
-
-        .telepharmacy-intro h2 {
-
-            color: #0056D2;
-
-            font-size: 40px;
-
-            margin-bottom: 20px;
-        }
-
-
-        .telepharmacy-intro p {
-
-            font-size: 19px;
-
-            line-height: 1.8;
-        }
-
-
-        /* =================================================
-           THREE ACTION CARDS
-        ================================================= */
-
-        .telepharmacy-actions-section {
+        .telepharmacy-section {
 
             width: 90%;
 
@@ -347,131 +231,135 @@
 
             margin: 50px auto;
 
-            background: transparent;
+            padding: 45px 30px;
 
-            box-shadow: none;
+            background: white;
 
-            padding: 0;
+            border-radius: 12px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.08);
+
         }
 
 
-        .telepharmacy-actions {
+        .section-heading {
+
+            text-align: center;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .section-heading h2 {
+
+            color: #0057c8;
+
+            font-size: 38px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .section-heading p {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            color: #444;
+
+        }
+
+
+        /* =========================================
+           SERVICE CARDS
+        ========================================= */
+
+        .telepharmacy-cards {
 
             display: grid;
 
             grid-template-columns:
                 repeat(3, 1fr);
 
-            gap: 30px;
+            gap: 25px;
+
         }
 
 
-        .tele-action-card {
+        .telepharmacy-card {
 
-            background: white;
+            background: #f5f9ff;
 
-            padding: 40px 25px;
+            border-radius: 12px;
 
-            border-radius: 15px;
+            padding: 30px 25px;
 
             text-align: center;
 
+            border: 1px solid #e1ebf7;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+        }
+
+
+        .telepharmacy-card:hover {
+
+            transform: translateY(-5px);
+
             box-shadow:
-                0 6px 20px rgba(0,0,0,.10);
+                0 8px 25px rgba(0, 0, 0, 0.10);
 
-            transition: .3s;
         }
 
 
-        .tele-action-card:hover {
+        .telepharmacy-card .icon {
 
-            transform: translateY(-8px);
-
-            box-shadow:
-                0 12px 30px rgba(0,0,0,.18);
-        }
-
-
-        .tele-icon {
-
-            font-size: 48px;
-
-            margin-bottom: 18px;
-        }
-
-
-        .tele-action-card h3 {
-
-            color: #0056D2;
-
-            font-size: 23px;
+            font-size: 45px;
 
             margin-bottom: 15px;
+
         }
 
 
-        .tele-action-card p {
+        .telepharmacy-card h3 {
 
-            font-size: 17px;
+            color: #0057c8;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .telepharmacy-card p {
 
             line-height: 1.7;
 
-            margin-bottom: 25px;
+            color: #555;
+
         }
 
 
-        /* =================================================
+        /* =========================================
            BOOKING SECTION
-        ================================================= */
+        ========================================= */
 
-        .telepharmacy-booking {
+        .booking-section {
 
-            width: 90%;
+            overflow: hidden;
 
-            max-width: 1100px;
-
-            margin: 80px auto;
-
-            padding: 40px 20px;
-
-            background: white;
-
-            border-radius: 15px;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,.08);
         }
 
-
-        .telepharmacy-booking h2 {
-
-            text-align: center;
-
-            color: #0056D2;
-
-            font-size: 38px;
-
-            margin-bottom: 15px;
-        }
-
-
-        .telepharmacy-booking-intro {
-
-            max-width: 800px;
-
-            margin: 0 auto 35px;
-
-            text-align: center;
-
-            font-size: 18px;
-
-            line-height: 1.8;
-        }
-
-
-        /* =================================================
-           CALENDLY
-        ================================================= */
 
         .calendly-container {
 
@@ -479,9 +367,10 @@
 
             overflow: hidden;
 
-            border-radius: 12px;
+            border-radius: 10px;
 
-            background: white;
+            background: #fff;
+
         }
 
 
@@ -492,115 +381,99 @@
             min-width: 320px;
 
             height: 700px;
+
         }
 
 
-        /* =================================================
-           DOXY SECTION
-        ================================================= */
+        /* =========================================
+           DOXYME SECTION
+        ========================================= */
 
         .doxy-section {
 
-            width: 90%;
-
-            max-width: 950px;
-
-            margin: 70px auto;
-
-            padding: 50px 30px;
-
             text-align: center;
+
+        }
+
+
+        .doxy-box {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            padding: 40px 30px;
 
             background: #f5f9ff;
 
-            border-radius: 15px;
+            border-radius: 12px;
 
-            box-shadow:
-                0 5px 20px rgba(0,0,0,.08);
+            border: 1px solid #dce9f7;
+
         }
 
 
-        .doxy-section h2 {
+        .doxy-box h3 {
 
-            color: #0056D2;
+            color: #0057c8;
 
-            font-size: 35px;
+            font-size: 30px;
 
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+
         }
 
 
-        .doxy-section p {
-
-            max-width: 750px;
-
-            margin: 0 auto 25px;
+        .doxy-box p {
 
             font-size: 18px;
 
-            line-height: 1.8;
+            line-height: 1.7;
+
+            color: #444;
+
+            margin-bottom: 25px;
+
         }
 
 
         .doxy-note {
 
-            font-size: 15px !important;
+            margin-top: 20px;
 
-            color: #555;
+            font-size: 15px;
+
+            color: #666;
+
         }
 
 
-        /* =================================================
+        /* =========================================
            HOW IT WORKS
-        ================================================= */
+        ========================================= */
 
-        .tele-how-it-works {
-
-            width: 90%;
-
-            max-width: 1100px;
-
-            margin: 80px auto;
-
-            padding: 20px;
-        }
-
-
-        .tele-how-it-works h2 {
-
-            text-align: center;
-
-            color: #0056D2;
-
-            font-size: 38px;
-
-            margin-bottom: 40px;
-        }
-
-
-        .tele-steps {
+        .steps {
 
             display: grid;
 
             grid-template-columns:
-                repeat(3, 1fr);
+                repeat(4, 1fr);
 
-            gap: 30px;
+            gap: 20px;
+
         }
 
 
-        .tele-step {
-
-            background: white;
-
-            padding: 30px 20px;
+        .step {
 
             text-align: center;
 
-            border-radius: 15px;
+            padding: 25px 20px;
 
-            box-shadow:
-                0 5px 20px rgba(0,0,0,.08);
+            background: #f5f9ff;
+
+            border-radius: 12px;
+
         }
 
 
@@ -610,432 +483,310 @@
 
             height: 50px;
 
-            margin: 0 auto 18px;
-
             border-radius: 50%;
 
-            background: #0056D2;
+            background: #0057c8;
 
             color: white;
 
             display: flex;
 
-            justify-content: center;
-
             align-items: center;
 
-            font-size: 21px;
+            justify-content: center;
+
+            margin: 0 auto 15px;
+
+            font-size: 22px;
 
             font-weight: bold;
+
         }
 
 
-        .tele-step h3 {
+        .step h3 {
 
-            color: #0056D2;
+            color: #0057c8;
 
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+
         }
 
 
-        .tele-step p {
+        .step p {
 
-            line-height: 1.7;
+            line-height: 1.6;
 
-            font-size: 16px;
+            color: #555;
+
         }
 
 
-        /* =================================================
+        /* =========================================
            PATIENT PREPARATION
-        ================================================= */
+        ========================================= */
 
-        .tele-preparation {
+        .preparation-list {
 
-            width: 90%;
-
-            max-width: 950px;
-
-            margin: 70px auto;
-
-            padding: 40px;
-
-            background: white;
-
-            border-radius: 15px;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,.08);
-        }
-
-
-        .tele-preparation h2 {
-
-            color: #0056D2;
-
-            text-align: center;
-
-            margin-bottom: 30px;
-        }
-
-
-        .tele-preparation ul {
-
-            max-width: 750px;
+            max-width: 850px;
 
             margin: auto;
 
             padding-left: 25px;
+
         }
 
 
-        .tele-preparation li {
+        .preparation-list li {
 
             margin-bottom: 15px;
 
             line-height: 1.7;
+
+            color: #444;
+
         }
 
 
-        /* =================================================
+        /* =========================================
            PRIVACY NOTICE
-        ================================================= */
+        ========================================= */
 
-        .tele-privacy {
-
-            width: 90%;
-
-            max-width: 900px;
-
-            margin: 60px auto;
-
-            padding: 30px;
+        .privacy-notice {
 
             background: #eef6ff;
 
-            border-left: 5px solid #0056D2;
+            border-left: 5px solid #0057c8;
+
+            padding: 25px;
 
             border-radius: 8px;
+
+            line-height: 1.7;
+
+            color: #444;
+
         }
 
 
-        .tele-privacy h2 {
+        /* =========================================
+           FINAL CTA
+        ========================================= */
 
-            color: #0056D2;
+        .telepharmacy-cta {
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0057c8,
+                    #003b87
+                );
+
+            color: white;
+
+        }
+
+
+        .telepharmacy-cta h2 {
+
+            color: white;
+
+            font-size: 36px;
 
             margin-bottom: 15px;
+
         }
 
 
-        .tele-privacy p {
+        .telepharmacy-cta p {
 
-            line-height: 1.8;
+            max-width: 750px;
 
-            font-size: 16px;
+            margin: 0 auto 25px;
+
+            line-height: 1.7;
+
+            font-size: 18px;
+
         }
 
 
-        /* =================================================
-           MOBILE NAVIGATION
-        ================================================= */
+        /* =========================================
+           MOBILE RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 900px) {
+
+            .telepharmacy-cards {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .steps {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .telepharmacy-overlay h1 {
+
+                font-size: 40px;
+
+            }
+
+        }
+
 
         @media (max-width: 768px) {
 
-            .telepharmacy-hero nav {
+            .telepharmacy-hero {
 
-                padding: 15px;
+                min-height: 600px;
 
-                justify-content: flex-start;
-
-                flex-wrap: wrap;
             }
 
 
-            .telepharmacy-hero .menu-toggle {
+            .telepharmacy-overlay {
 
-                display: block;
+                padding:
+                    80px 20px
+                    50px;
+
             }
 
 
-            .telepharmacy-hero .nav-links {
+            .telepharmacy-overlay h1 {
 
-                width: 100%;
+                font-size: 34px;
 
-                display: flex;
+            }
+
+
+            .telepharmacy-overlay p {
+
+                font-size: 17px;
+
+            }
+
+
+            .telepharmacy-section {
+
+                width: 94%;
+
+                padding:
+                    35px 18px;
+
+                margin:
+                    30px auto;
+
+            }
+
+
+            .section-heading h2 {
+
+                font-size: 30px;
+
+            }
+
+
+            .telepharmacy-cards {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .steps {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .doxy-box {
+
+                padding:
+                    30px 20px;
+
+            }
+
+
+            .doxy-box h3 {
+
+                font-size: 25px;
+
+            }
+
+
+            .telepharmacy-buttons {
 
                 flex-direction: column;
 
-                overflow: hidden;
+                width: 100%;
 
-                max-height: 0;
-
-                opacity: 0;
-
-                transform:
-                    translateY(-10px);
-
-                transition:
-                    max-height .4s ease,
-                    opacity .3s ease;
             }
 
 
-            .telepharmacy-hero
-            .nav-links.active {
-
-                max-height: 500px;
-
-                opacity: 1;
-
-                transform:
-                    translateY(0);
-
-                margin-top: 15px;
-
-                background: white;
-
-                border-radius: 10px;
-
-                box-shadow:
-                    0 8px 25px rgba(0,0,0,.15);
-            }
-
-
-            .telepharmacy-hero
-            .nav-links a {
-
-                color: #003d99;
-
-                padding: 15px 20px;
-
-                border-bottom:
-                    1px solid #eeeeee;
-            }
-
-
-            .telepharmacy-hero
-            .nav-links a:last-child {
-
-                border-bottom: none;
-            }
-
-
-            .telepharmacy-hero
-            .nav-links a:hover {
-
-                background: #f5f9ff;
-            }
-
-
-            /* HERO */
-
-            .telepharmacy-hero {
-
-                min-height: 560px;
-
-                background-position: center;
-            }
-
-
-            .telepharmacy-hero-content {
-
-                min-height: 450px;
-
-                padding:
-                    40px 20px;
-            }
-
-
-            .telepharmacy-logo {
-
-                width: 115px;
-            }
-
-
-            .telepharmacy-hero-content h1 {
-
-                font-size: 36px;
-            }
-
-
-            .telepharmacy-hero-content p {
-
-                font-size: 17px;
-            }
-
-
-            /* ACTION CARDS */
-
-            .telepharmacy-actions {
-
-                grid-template-columns: 1fr;
-            }
-
-
-            /* INTRO */
-
-            .telepharmacy-intro {
+            .telepharmacy-buttons .btn {
 
                 width: 90%;
 
-                margin-top: 40px;
+                max-width: 330px;
 
-                padding: 25px 20px;
-            }
-
-
-            .telepharmacy-intro h2 {
-
-                font-size: 30px;
-            }
-
-
-            /* BOOKING */
-
-            .telepharmacy-booking {
-
-                width: 90%;
-
-                padding:
-                    30px 10px;
-
-                margin-top: 50px;
-            }
-
-
-            .telepharmacy-booking h2 {
-
-                font-size: 30px;
             }
 
 
             .calendly-inline-widget {
 
-                height: 700px;
-            }
+                height: 720px;
 
-
-            /* DOXY */
-
-            .doxy-section {
-
-                width: 90%;
-
-                padding:
-                    40px 20px;
-            }
-
-
-            .doxy-section h2 {
-
-                font-size: 30px;
-            }
-
-
-            /* HOW IT WORKS */
-
-            .tele-steps {
-
-                grid-template-columns: 1fr;
-            }
-
-
-            .tele-how-it-works {
-
-                width: 90%;
-            }
-
-
-            /* PREPARATION */
-
-            .tele-preparation {
-
-                width: 90%;
-
-                padding: 30px 20px;
-            }
-
-
-            .tele-privacy {
-
-                width: 90%;
-
-                padding: 25px 20px;
             }
 
         }
 
 
-        /* =================================================
-           SMALL PHONES
-        ================================================= */
-
         @media (max-width: 480px) {
 
-            .telepharmacy-hero {
-
-                min-height: 530px;
-            }
-
-
-            .telepharmacy-hero-content {
-
-                padding:
-                    35px 15px;
-            }
-
-
-            .telepharmacy-logo {
-
-                width: 95px;
-            }
-
-
-            .telepharmacy-hero-content h1 {
+            .telepharmacy-overlay h1 {
 
                 font-size: 29px;
+
             }
 
 
-            .telepharmacy-hero-content p {
+            .telepharmacy-overlay p {
 
                 font-size: 16px;
+
             }
 
 
-            .telepharmacy-hero-buttons {
-
-                width: 100%;
-
-                flex-direction: column;
-            }
-
-
-            .telepharmacy-hero-buttons .btn {
-
-                width: 100%;
-
-                max-width: 300px;
-
-                margin: 7px auto;
-            }
-
-
-            .tele-action-card {
-
-                padding: 30px 20px;
-            }
-
-
-            .telepharmacy-booking h2 {
+            .section-heading h2 {
 
                 font-size: 27px;
+
             }
 
 
-            .doxy-section h2 {
+            .section-heading p {
 
-                font-size: 27px;
+                font-size: 16px;
+
+            }
+
+
+            .telepharmacy-section {
+
+                padding:
+                    30px 15px;
+
             }
 
         }
@@ -1043,33 +794,40 @@
     </style>
 
 
-    <!-- =====================================================
+    <!-- =========================
          STRUCTURED DATA
-    ====================================================== -->
+    ========================== -->
 
     <script type="application/ld+json">
 
     {
         "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
+        "@type": "Pharmacy",
 
         "name": "Telco Pharmacy & Stores",
 
-        "url": "https://telcopharmacy.health/telepharmacy.html",
+        "url": "https://telcopharmacy.health/",
 
         "telephone": "+2347051621000",
 
-        "email": "info@telcopharmacy.health",
-
-        "medicalSpecialty": "Pharmacy",
+        "image":
+            "https://telcopharmacy.health/images/pharmacy-front.webp",
 
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Opposite LEA Primary School Gate, Aleyita, Airport Road",
+            "streetAddress":
+                "XCR3+96J, off Airport Road, behind LEA Primary School",
             "addressLocality": "Lugbe",
-            "addressRegion": "FCT Abuja",
+            "addressRegion": "Federal Capital Territory",
+            "postalCode": "900107",
             "addressCountry": "NG"
-        }
+        },
+
+        "areaServed": "Abuja, Nigeria",
+
+        "sameAs": [
+            "https://telcopharmacy.health/"
+        ]
     }
 
     </script>
@@ -1081,33 +839,44 @@
 
 
     <!-- =====================================================
-         TELEPHARMACY HERO
+         HERO + NAVIGATION
     ====================================================== -->
 
     <header class="telepharmacy-hero">
 
-
-        <!-- ================================================
-             NAVIGATION
-        ================================================= -->
-
         <nav>
 
+            <!-- LOGO -->
 
-            <!-- Mobile Menu Button -->
+            <a
+                href="index.html"
+                aria-label="Telco Pharmacy & Stores Home">
+
+                <img
+                    src="images/logo.webp"
+                    class="logo"
+                    alt="Telco Pharmacy & Stores Logo"
+                    width="175"
+                    height="117">
+
+            </a>
+
+
+            <!-- MOBILE MENU BUTTON -->
 
             <div
                 class="menu-toggle"
                 id="mobile-menu"
                 aria-label="Open navigation menu"
                 role="button"
-                tabindex="0"
-            >
+                tabindex="0">
+
                 ☰
+
             </div>
 
 
-            <!-- Navigation Links -->
+            <!-- NAVIGATION -->
 
             <div class="nav-links">
 
@@ -1140,68 +909,51 @@
         </nav>
 
 
-        <!-- ================================================
-             HERO CONTENT
-        ================================================= -->
+        <!-- HERO CONTENT -->
 
-        <div class="telepharmacy-hero-content">
-
-
-            <img
-                src="images/logo.webp"
-                class="telepharmacy-logo"
-                alt="Telco Pharmacy & Stores Logo"
-                width="175"
-                height="117"
-            >
-
+        <div class="telepharmacy-overlay">
 
             <h1>
                 Online Telepharmacy Consultation
             </h1>
 
-
             <p>
-                Connect with Telco Pharmacy & Stores from the
-                comfort of your home. Book a convenient appointment,
-                receive professional pharmacist support, and join
-                your scheduled video consultation online.
+                Connect with Telco Pharmacy & Stores for
+                convenient pharmacist consultation, appointment
+                scheduling and private online video consultation.
             </p>
 
 
-            <div class="telepharmacy-hero-buttons">
-
+            <div class="telepharmacy-buttons">
 
                 <a
                     href="#book"
-                    class="btn"
-                >
-                    📅 Book Consultation
-                </a>
+                    class="btn">
 
+                    Book Consultation
 
-                <!--
-                    REPLACE YOUR_DOXYME_ROOM_LINK
-                    WITH YOUR REAL DOXY.ME ROOM LINK
-                -->
-
-                <a
-                    href="YOUR_DOXYME_ROOM_LINK"
-                    class="btn doxy-button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    🎥 Join Video Consultation
                 </a>
 
 
                 <a
-                    href="https://wa.me/2347051621000?text=Hello%20Telco%20Pharmacy,%20I%20would%20like%20to%20speak%20with%20a%20pharmacist."
-                    class="btn btn2"
+                    href="https://doxy.me/telcopharmacy"
                     target="_blank"
                     rel="noopener noreferrer"
-                >
-                    💬 Chat on WhatsApp
+                    class="btn">
+
+                    Join Video Consultation
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/2347051621000?text=Hello%20Telco%20Pharmacy,%20I%20need%20help%20with%20a%20telepharmacy%20consultation."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn2">
+
+                    Chat on WhatsApp
+
                 </a>
 
             </div>
@@ -1212,150 +964,90 @@
 
 
 
-    <!-- =====================================================
-         MAIN CONTENT
-    ====================================================== -->
-
     <main>
 
 
-        <!-- =================================================
-             INTRODUCTION
-        ================================================== -->
+        <!-- =====================================================
+             TELEPHARMACY SERVICES
+        ====================================================== -->
 
-        <section class="telepharmacy-intro">
+        <section class="telepharmacy-section">
 
-            <h2>
-                Professional Pharmacy Care From Anywhere
-            </h2>
+            <div class="section-heading">
 
-            <p>
+                <h2>
+                    Telepharmacy Services
+                </h2>
 
-                Our telepharmacy service makes it easier to
-                connect with a pharmacist for professional
-                pharmaceutical support without needing to
-                visit the pharmacy physically.
+                <p>
+                    Access professional pharmacy support remotely
+                    when visiting the pharmacy in person is not
+                    convenient.
+                </p>
 
-            </p>
-
-        </section>
-
+            </div>
 
 
-        <!-- =================================================
-             THREE MAIN OPTIONS
-        ================================================== -->
-
-        <section class="telepharmacy-actions-section">
+            <div class="telepharmacy-cards">
 
 
-            <div class="telepharmacy-actions">
+                <div class="telepharmacy-card">
+
+                    <div class="icon">
+                        💊
+                    </div>
+
+                    <h3>
+                        Medication Guidance
+                    </h3>
+
+                    <p>
+                        Receive professional guidance about
+                        medicines, their proper use, precautions,
+                        storage and general medication-related
+                        questions.
+                    </p>
+
+                </div>
 
 
-                <!-- =========================================
-                     BOOK CONSULTATION
-                ========================================== -->
+                <div class="telepharmacy-card">
 
-                <div class="tele-action-card">
-
-                    <div class="tele-icon">
+                    <div class="icon">
                         📅
                     </div>
 
                     <h3>
-                        Book a Consultation
+                        Appointment Scheduling
                     </h3>
 
                     <p>
-
-                        Select a convenient appointment time
-                        for your online pharmacist consultation.
-
+                        Choose a convenient appointment date and
+                        time using our online Calendly scheduling
+                        system.
                     </p>
-
-                    <a
-                        href="#book"
-                        class="btn"
-                    >
-                        Book Appointment
-                    </a>
 
                 </div>
 
 
+                <div class="telepharmacy-card">
 
-                <!-- =========================================
-                     DOXY.ME
-                ========================================== -->
-
-                <div class="tele-action-card">
-
-                    <div class="tele-icon">
+                    <div class="icon">
                         🎥
                     </div>
 
                     <h3>
-                        Join Video Consultation
+                        Online Video Consultation
                     </h3>
 
                     <p>
-
-                        Have an appointment already?
-                        Join the Telco Pharmacy Doxy.me
-                        consultation room.
-
+                        After scheduling your appointment, join
+                        your pharmacist through the Telco Pharmacy
+                        Doxy.me consultation room.
                     </p>
-
-
-                    <!--
-                        REPLACE YOUR_DOXYME_ROOM_LINK
-                        WITH YOUR REAL DOXY.ME LINK
-                    -->
-
-                    <a
-                        href="YOUR_DOXYME_ROOM_LINK"
-                        class="btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Join Doxy.me
-                    </a>
 
                 </div>
 
-
-
-                <!-- =========================================
-                     WHATSAPP
-                ========================================== -->
-
-                <div class="tele-action-card">
-
-                    <div class="tele-icon">
-                        💬
-                    </div>
-
-                    <h3>
-                        Chat With Our Team
-                    </h3>
-
-                    <p>
-
-                        Contact Telco Pharmacy through WhatsApp
-                        for general enquiries and appointment support.
-
-                    </p>
-
-                    <a
-                        href="https://wa.me/2347051621000?text=Hello%20Telco%20Pharmacy,%20I%20would%20like%20to%20speak%20with%20a%20pharmacist."
-                        class="btn btn2"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Chat on WhatsApp
-                    </a>
-
-                </div>
 
             </div>
 
@@ -1363,108 +1055,139 @@
 
 
 
-        <!-- =========================
-     CALENDLY BOOKING
-========================= -->
-<section class="telepharmacy-section booking-section" id="book">
-    <div class="section-heading">
-        <h2>Book Your Telepharmacy Consultation</h2>
-        <p>
-            Choose an available date and time for your telepharmacy appointment.
-            After booking, you can use the Telco Pharmacy Doxy.me room link
-            to join your scheduled video consultation.
-        </p>
-    </div>
+        <!-- =====================================================
+             CALENDLY BOOKING
+        ====================================================== -->
 
-    <div class="calendly-container">
+        <section
+            class="telepharmacy-section booking-section"
+            id="book">
 
-        <!-- Calendly inline widget begin -->
-        <div
-            class="calendly-inline-widget"
-            data-url="https://calendly.com/telco-pharmacy/30min"
-            style="min-width:320px;height:700px;">
-        </div>
+            <div class="section-heading">
 
-        <script
-            type="text/javascript"
-            src="https://assets.calendly.com/assets/external/widget.js"
-            async>
-        </script>
-        <!-- Calendly inline widget end -->
+                <h2>
+                    Book Your Telepharmacy Consultation
+                </h2>
 
-    </div>
-</section>
+                <p>
+                    Choose an available date and time for your
+                    telepharmacy appointment. After booking, you
+                    can use the Telco Pharmacy Doxy.me room link
+                    to join your scheduled video consultation.
+                </p>
+
+            </div>
 
 
+            <div class="calendly-container">
 
-        <!-- =================================================
-             DOXY.ME VIDEO CONSULTATION
-        ================================================== -->
+                <!-- Calendly inline widget begin -->
 
-        <section class="doxy-section">
+                <div
+                    class="calendly-inline-widget"
+                    data-url="https://calendly.com/telco-pharmacy/30min"
+                    style="min-width:320px;height:700px;">
+                </div>
 
+                <script
+                    type="text/javascript"
+                    src="https://assets.calendly.com/assets/external/widget.js"
+                    async>
+                </script>
 
-            <h2>
-                🎥 Join Your Video Consultation
-            </h2>
+                <!-- Calendly inline widget end -->
 
-
-            <p>
-
-                If you already have a scheduled appointment,
-                use the Telco Pharmacy Doxy.me room to join
-                your pharmacist.
-
-            </p>
-
-
-            <p class="doxy-note">
-
-                You do not need to create a Doxy.me account
-                or download an app as a patient. Open the
-                provider's room link in a supported browser,
-                enter your name and allow camera and microphone
-                access when requested.
-
-            </p>
-
-
-            <!--
-                REPLACE YOUR_DOXYME_ROOM_LINK
-                WITH YOUR REAL DOXY.ME ROOM LINK
-            -->
-
-            <a
-                href="YOUR_DOXYME_ROOM_LINK"
-                class="btn doxy-button"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                🎥 Enter Doxy.me Waiting Room
-            </a>
+            </div>
 
         </section>
 
 
 
-        <!-- =================================================
+        <!-- =====================================================
+             DOXY.ME VIDEO CONSULTATION
+        ====================================================== -->
+
+        <section
+            class="telepharmacy-section doxy-section"
+            id="video-consultation">
+
+            <div class="section-heading">
+
+                <h2>
+                    Join Your Video Consultation
+                </h2>
+
+                <p>
+                    Have you already booked your appointment?
+                    Join the Telco Pharmacy online consultation
+                    room at your scheduled time.
+                </p>
+
+            </div>
+
+
+            <div class="doxy-box">
+
+                <h3>
+                    Telco Pharmacy Doxy.me Room
+                </h3>
+
+                <p>
+                    Click the button below at your scheduled
+                    consultation time to connect with the
+                    pharmacist through Doxy.me.
+                </p>
+
+
+                <a
+                    href="https://doxy.me/telcopharmacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn">
+
+                    Join Video Consultation
+
+                </a>
+
+
+                <p class="doxy-note">
+
+                    You can join from a supported web browser.
+                    Follow the instructions provided by Doxy.me
+                    when you enter the consultation room.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
              HOW IT WORKS
-        ================================================== -->
+        ====================================================== -->
 
-        <section class="tele-how-it-works">
+        <section class="telepharmacy-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    How Telepharmacy Works
+                </h2>
+
+                <p>
+                    Our simple four-step process helps you connect
+                    with the pharmacy conveniently online.
+                </p>
+
+            </div>
 
 
-            <h2>
-                How Telepharmacy Works
-            </h2>
+            <div class="steps">
 
 
-            <div class="tele-steps">
-
-
-                <!-- STEP 1 -->
-
-                <div class="tele-step">
+                <div class="step">
 
                     <div class="step-number">
                         1
@@ -1475,20 +1198,14 @@
                     </h3>
 
                     <p>
-
-                        Select a convenient appointment
-                        date and time using our online
-                        booking system.
-
+                        Select an available date and time using
+                        the Calendly booking system.
                     </p>
 
                 </div>
 
 
-
-                <!-- STEP 2 -->
-
-                <div class="tele-step">
+                <div class="step">
 
                     <div class="step-number">
                         2
@@ -1499,21 +1216,14 @@
                     </h3>
 
                     <p>
-
-                        Keep your prescription,
-                        medication information and
-                        relevant questions available
-                        for your consultation.
-
+                        Have your relevant medication information
+                        and questions ready for the consultation.
                     </p>
 
                 </div>
 
 
-
-                <!-- STEP 3 -->
-
-                <div class="tele-step">
+                <div class="step">
 
                     <div class="step-number">
                         3
@@ -1524,15 +1234,30 @@
                     </h3>
 
                     <p>
-
-                        At your scheduled time,
-                        open your Telco Pharmacy
-                        Doxy.me room link and join
-                        your pharmacist.
-
+                        At your scheduled time, open the Telco
+                        Pharmacy Doxy.me room.
                     </p>
 
                 </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+                    <h3>
+                        Consult
+                    </h3>
+
+                    <p>
+                        Communicate with the pharmacist and
+                        receive appropriate professional guidance.
+                    </p>
+
+                </div>
+
 
             </div>
 
@@ -1540,47 +1265,57 @@
 
 
 
-        <!-- =================================================
+        <!-- =====================================================
              PATIENT PREPARATION
-        ================================================== -->
+        ====================================================== -->
 
-        <section class="tele-preparation">
+        <section class="telepharmacy-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    How to Prepare for Your Consultation
+                </h2>
+
+                <p>
+                    Preparing your information in advance can help
+                    make your consultation more useful.
+                </p>
+
+            </div>
 
 
-            <h2>
-                How to Prepare for Your Consultation
-            </h2>
-
-
-            <ul>
+            <ul class="preparation-list">
 
                 <li>
-                    Find a quiet and well-lit place for
-                    your consultation.
+                    Have a list of the medicines and supplements
+                    you currently use.
                 </li>
 
                 <li>
-                    Make sure your phone, tablet or computer
-                    has a working camera and microphone.
+                    Know the name and strength of medicines you
+                    want to discuss, if available.
                 </li>
 
                 <li>
-                    Use a stable internet connection.
+                    Prepare the main questions or concerns you
+                    want to discuss with the pharmacist.
                 </li>
 
                 <li>
-                    Have your current medicines or
-                    prescription information available.
+                    Keep relevant medication packages or
+                    prescriptions available if needed.
                 </li>
 
                 <li>
-                    Prepare any questions you would like
-                    to discuss with the pharmacist.
+                    Choose a quiet location with a reliable
+                    internet connection for your video consultation.
                 </li>
 
                 <li>
-                    Join the Doxy.me waiting room a few
-                    minutes before your scheduled appointment.
+                    Use a device with a working camera and
+                    microphone if your consultation requires
+                    video.
                 </li>
 
             </ul>
@@ -1589,32 +1324,102 @@
 
 
 
-        <!-- =================================================
+        <!-- =====================================================
              PRIVACY
-        ================================================== -->
+        ====================================================== -->
 
-        <section class="tele-privacy">
+        <section class="telepharmacy-section">
 
+            <div class="section-heading">
+
+                <h2>
+                    Privacy & Patient Information
+                </h2>
+
+            </div>
+
+
+            <div class="privacy-notice">
+
+                <p>
+                    Telco Pharmacy & Stores is committed to
+                    protecting patient information and providing
+                    responsible digital healthcare services.
+                    Telepharmacy services should be used through
+                    the designated consultation and communication
+                    channels.
+                </p>
+
+                <p>
+                    Please avoid sending highly sensitive medical
+                    information through ordinary public channels
+                    unless specifically requested through an
+                    appropriate secure process.
+                </p>
+
+                <p>
+                    This website is designed with healthcare
+                    security best practices. Specific legal,
+                    regulatory and privacy requirements applicable
+                    to telepharmacy services should be assessed
+                    and implemented as the platform develops.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FINAL CALL TO ACTION
+        ====================================================== -->
+
+        <section class="telepharmacy-section telepharmacy-cta">
 
             <h2>
-                Patient Privacy & Digital Healthcare
+                Ready to Speak With a Pharmacist?
             </h2>
 
-
             <p>
-
-                Telco Pharmacy & Stores is committed to
-                protecting patient privacy and continuously
-                strengthening its digital healthcare security
-                practices.
-
-                Please avoid sending unnecessary sensitive
-                medical information through general messaging
-                channels. Use the designated consultation
-                workflow when discussing clinical information
-                with our pharmacy team.
-
+                Schedule your telepharmacy consultation and
+                connect with Telco Pharmacy & Stores online.
             </p>
+
+
+            <div class="telepharmacy-buttons">
+
+                <a
+                    href="#book"
+                    class="btn">
+
+                    Book Your Consultation
+
+                </a>
+
+
+                <a
+                    href="https://doxy.me/telcopharmacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn">
+
+                    Join Doxy.me
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/2347051621000?text=Hello%20Telco%20Pharmacy,%20I%20would%20like%20to%20make%20an%20enquiry."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn2">
+
+                    WhatsApp Us
+
+                </a>
+
+            </div>
 
         </section>
 
@@ -1629,13 +1434,10 @@
 
     <footer class="footer">
 
-
         <div class="footer-container">
 
 
-            <!-- =============================================
-                 BUSINESS
-            ============================================== -->
+            <!-- COMPANY -->
 
             <div class="footer-column">
 
@@ -1644,22 +1446,15 @@
                 </h3>
 
                 <p>
-
-                    Your health is our priority.
-
-                    We provide trusted pharmaceutical care,
-                    telepharmacy, health education and
-                    quality medicines.
-
+                    Your health is our priority. We offer essential
+                    drug information, telepharmacy and quality care
+                    as your trusted healthcare partner.
                 </p>
 
             </div>
 
 
-
-            <!-- =============================================
-                 QUICK LINKS
-            ============================================== -->
+            <!-- QUICK LINKS -->
 
             <div class="footer-column">
 
@@ -1667,31 +1462,25 @@
                     Quick Links
                 </h3>
 
-
                 <a href="index.html">
                     Home
                 </a>
-
 
                 <a href="about.html">
                     About
                 </a>
 
-
                 <a href="services.html">
                     Services
                 </a>
-
 
                 <a href="portal.html">
                     Patient Portal
                 </a>
 
-
                 <a href="telepharmacy.html">
                     Telepharmacy
                 </a>
-
 
                 <a href="contact.html">
                     Contact
@@ -1700,10 +1489,7 @@
             </div>
 
 
-
-            <!-- =============================================
-                 CONTACT
-            ============================================== -->
+            <!-- CONTACT -->
 
             <div class="footer-column">
 
@@ -1711,45 +1497,28 @@
                     Contact Us
                 </h3>
 
-
                 <p>
                     📞 +234 705 162 1000
                 </p>
-
 
                 <p>
                     📧 info@telcopharmacy.health
                 </p>
 
-
                 <p>
                     📍 Lugbe, Abuja, Nigeria
                 </p>
-
 
                 <p>
                     🕒 Mon–Sat: 7:00 AM – 9:00 PM
                 </p>
 
-
                 <p>
                     Sunday: 3:00 PM – 9:00 PM
                 </p>
 
-
-                <p>
-
-                    <a
-                        href="https://wa.me/2347051621000?text=Hello%20Telco%20Pharmacy,%20I%20need%20assistance."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        💬 Chat on WhatsApp
-                    </a>
-
-                </p>
-
             </div>
+
 
         </div>
 
@@ -1769,19 +1538,38 @@
 
 
     <!-- =====================================================
-         CALENDLY SCRIPT
+         WEBSITE JAVASCRIPT
     ====================================================== -->
 
+    <script src="js/config.js"></script>
+
+
+    <!-- EmailJS -->
+
     <script
-        src="https://assets.calendly.com/assets/external/widget.js"
-        async>
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 
 
+    <script>
 
-    <!-- =====================================================
-         WEBSITE JAVASCRIPT
-    ====================================================== -->
+        if (
+            typeof APP_CONFIG !== "undefined" &&
+            APP_CONFIG.EMAILJS &&
+            APP_CONFIG.EMAILJS.PUBLIC_KEY
+        ) {
+
+            emailjs.init({
+                publicKey:
+                    APP_CONFIG.EMAILJS.PUBLIC_KEY
+            });
+
+        }
+
+    </script>
+
+
+    <!-- Main Website JavaScript -->
 
     <script src="js/script.js"></script>
 
