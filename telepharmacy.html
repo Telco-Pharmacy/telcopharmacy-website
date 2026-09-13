@@ -287,20 +287,16 @@
 <body>
 
     <!-- =========================================
-         NAVIGATION
+         TELEPHARMACY HEADER
     ========================================== -->
 
-    <header>
+    <header class="telepharmacy-header">
 
-        <nav class="navbar">
+        <!-- Navigation -->
+        <nav>
 
-            <div class="logo">
-                <a href="index.html">
-                    <img
-                        src="images/logo.webp"
-                        alt="Telco Pharmacy & Stores"
-                    >
-                </a>
+            <div class="menu-toggle" id="mobile-menu">
+                ☰
             </div>
 
             <div class="nav-links">
@@ -313,107 +309,177 @@
 
                 <a href="portal.html">Patient Portal</a>
 
-                <a href="telepharmacy.html" class="active">
+                <a href="telepharmacy.html">
                     Telepharmacy
                 </a>
 
-                <a href="contact.html">Contact</a>
+                <a href="contact.html">
+                    Contact
+                </a>
 
-            </div>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
 
         </nav>
 
-    </header>
 
+        <!-- Header Content -->
 
-    <!-- =========================================
-         HERO
-    ========================================== -->
+        <div class="telepharmacy-header-overlay">
 
-    <section class="telepharmacy-hero">
+            <img
+                src="images/logo.webp"
+                class="telepharmacy-logo"
+                alt="Telco Pharmacy & Stores Logo"
+                width="175"
+                height="117"
+            >
 
-        <h1>Online Telepharmacy Consultation</h1>
+            <h1>Telepharmacy Services</h1>
 
-        <p>
-            Connect with Telco Pharmacy from the comfort of your home.
-            Book a convenient appointment, receive professional
-            pharmacist support, and join your scheduled video
-            consultation online.
-        </p>
+            <p>
+                Professional pharmacist support from the comfort
+                of your home.
+            </p>
 
-        <div class="telepharmacy-actions">
+            <div class="tele-header-buttons">
 
-            <div class="tele-action-card">
-
-                <div class="tele-icon">📅</div>
-
-                <h3>Book a Consultation</h3>
-
-                <p>
-                    Choose a convenient date and time for your
-                    online pharmacist consultation.
-                </p>
-
-                <a href="#book" class="btn">
-                    Book Appointment
+                <a
+                    href="#book"
+                    class="btn">
+                    Book Consultation
                 </a>
-
-            </div>
-
-
-            <div class="tele-action-card">
-
-                <div class="tele-icon">🎥</div>
-
-                <h3>Join Video Consultation</h3>
-
-                <p>
-                    Already have an appointment?
-                    Enter the Telco Pharmacy Doxy.me
-                    consultation room.
-                </p>
 
                 <a
                     href="https://doxy.me/telcopharmacy"
                     class="btn"
                     target="_blank"
                     rel="noopener noreferrer">
-                    Join Consultation
-                </a>
-
-            </div>
-
-
-            <div class="tele-action-card">
-
-                <div class="tele-icon">💬</div>
-
-                <h3>Chat With Our Team</h3>
-
-                <p>
-                    Contact Telco Pharmacy through WhatsApp
-                    for general enquiries and appointment support.
-                </p>
-
-                <a
-                    href="https://wa.me/2347051621000?text=Hello%20Telco%20Pharmacy,%20I%20would%20like%20to%20speak%20with%20a%20pharmacist."
-                    class="btn"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Chat on WhatsApp
+                    🎥 Join Consultation
                 </a>
 
             </div>
 
         </div>
 
-    </section>
+    </header>
+
+
+    <!-- =========================================
+         MAIN TELEPHARMACY CONTENT
+    ========================================== -->
+
+    <main>
+
+        <section class="telepharmacy-intro">
+
+            <h2>
+                Online Telepharmacy Consultation
+            </h2>
+
+            <p>
+                Connect with Telco Pharmacy from the comfort
+                of your home. Book a convenient appointment,
+                receive professional pharmacist support,
+                and join your scheduled video consultation online.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================
+             THREE TELEPHARMACY SERVICES
+        ========================================== -->
+
+        <section class="telepharmacy-actions-section">
+
+            <div class="telepharmacy-actions">
+
+
+                <!-- BOOK -->
+
+                <div class="tele-action-card">
+
+                    <div class="tele-icon">
+                        📅
+                    </div>
+
+                    <h3>
+                        Book a Consultation
+                    </h3>
+
+                    <p>
+                        Choose a convenient date and time
+                        for your online pharmacist consultation.
+                    </p>
+
+                    <a
+                        href="#book"
+                        class="btn">
+                        Book Appointment
+                    </a>
+
+                </div>
+
+
+                <!-- DOXY -->
+
+                <div class="tele-action-card">
+
+                    <div class="tele-icon">
+                        🎥
+                    </div>
+
+                    <h3>
+                        Join Video Consultation
+                    </h3>
+
+                    <p>
+                        Already have an appointment?
+                        Enter the Telco Pharmacy Doxy.me
+                        consultation room.
+                    </p>
+
+                    <a
+                        href="https://doxy.me/telcopharmacy"
+                        class="btn"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Join Consultation
+                    </a>
+
+                </div>
+
+
+                <!-- WHATSAPP -->
+
+                <div class="tele-action-card">
+
+                    <div class="tele-icon">
+                        💬
+                    </div>
+
+                    <h3>
+                        Chat With Our Team
+                    </h3>
+
+                    <p>
+                        Contact Telco Pharmacy through WhatsApp
+                        for general enquiries and appointment support.
+                    </p>
+
+                    <a
+                        href="https://wa.me/2347051621000?text=Hello%20Telco%20Pharmacy,%20I%20would%20like%20to%20speak%20with%20a%20pharmacist."
+                        class="btn btn2"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Chat on WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
     <!-- =========================================
