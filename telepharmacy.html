@@ -1363,56 +1363,37 @@
 
 
 
-        <!-- =================================================
-             BOOKING SECTION
-        ================================================== -->
+        <!-- =========================
+     CALENDLY BOOKING
+========================= -->
+<section class="telepharmacy-section booking-section" id="book">
+    <div class="section-heading">
+        <h2>Book Your Telepharmacy Consultation</h2>
+        <p>
+            Choose an available date and time for your telepharmacy appointment.
+            After booking, you can use the Telco Pharmacy Doxy.me room link
+            to join your scheduled video consultation.
+        </p>
+    </div>
 
-        <section
-            class="telepharmacy-booking"
-            id="book"
-        >
+    <div class="calendly-container">
 
-            <h2>
-                Book Your Telepharmacy Consultation
-            </h2>
+        <!-- Calendly inline widget begin -->
+        <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/telco-pharmacy/30min"
+            style="min-width:320px;height:700px;">
+        </div>
 
+        <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async>
+        </script>
+        <!-- Calendly inline widget end -->
 
-            <p class="telepharmacy-booking-intro">
-
-                Choose an available date and time for your
-                telepharmacy appointment.
-
-                After booking, you can use the Telco Pharmacy
-                Doxy.me room link to join your scheduled
-                video consultation.
-
-            </p>
-
-
-            <div class="calendly-container">
-
-
-                <!--
-                    ==================================================
-                    REPLACE YOUR_CALENDLY_LINK
-
-                    Example:
-                    https://calendly.com/yourname/30min
-
-                    ==================================================
-                -->
-
-                <div
-                    class="calendly-inline-widget"
-                    data-url="YOUR_CALENDLY_LINK"
-                    data-resize="true"
-                >
-                </div>
-
-
-            </div>
-
-        </section>
+    </div>
+</section>
 
 
 
