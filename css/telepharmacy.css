@@ -1,1 +1,628 @@
+/* =========================================================
+   TELCO PHARMACY & STORES
+   TELEPHARMACY PAGE STYLES
+   File: css/telepharmacy.css
+========================================================= */
 
+
+/* =========================================================
+   TELEPHARMACY HERO
+========================================================= */
+
+.telepharmacy-hero {
+
+    background-image:
+        linear-gradient(
+            rgba(0, 45, 100, 0.68),
+            rgba(0, 45, 100, 0.68)
+        ),
+        url("../images/pharmacy-front.webp");
+
+    background-size: cover;
+    background-position: center;
+
+    min-height: 520px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.telepharmacy-overlay {
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 80px 20px 60px;
+}
+
+
+.telepharmacy-overlay h1 {
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+
+    line-height: 1.2;
+}
+
+
+.telepharmacy-overlay p {
+
+    max-width: 850px;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   TELEPHARMACY BUTTON GROUP
+========================================================= */
+
+.telepharmacy-buttons {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.telepharmacy-buttons .btn {
+
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+
+/* =========================================================
+   GENERAL TELEPHARMACY SECTION
+========================================================= */
+
+.telepharmacy-section {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    padding: 45px 30px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.section-heading h2 {
+
+    color: #0057c8;
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading p {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #444;
+}
+
+
+/* =========================================================
+   TELEPHARMACY SERVICE CARDS
+========================================================= */
+
+.telepharmacy-cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.telepharmacy-card {
+
+    background: #f5f9ff;
+
+    border-radius: 12px;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    border: 1px solid #e1ebf7;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.telepharmacy-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+.telepharmacy-card .icon {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.telepharmacy-card h3 {
+
+    color: #0057c8;
+
+    margin-bottom: 12px;
+}
+
+
+.telepharmacy-card p {
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+/* =========================================================
+   CALENDLY BOOKING SECTION
+========================================================= */
+
+.booking-section {
+
+    overflow: hidden;
+}
+
+
+.calendly-container {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #fff;
+}
+
+
+.calendly-inline-widget {
+
+    width: 100%;
+
+    min-width: 320px;
+
+    height: 700px;
+}
+
+
+/* =========================================================
+   DOXY.ME VIDEO CONSULTATION
+========================================================= */
+
+.doxy-section {
+
+    text-align: center;
+}
+
+
+.doxy-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 40px 30px;
+
+    background: #f5f9ff;
+
+    border-radius: 12px;
+
+    border: 1px solid #dce9f7;
+}
+
+
+.doxy-box h3 {
+
+    color: #0057c8;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.doxy-box p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #444;
+
+    margin-bottom: 25px;
+}
+
+
+.doxy-note {
+
+    margin-top: 20px;
+
+    font-size: 15px !important;
+
+    color: #666 !important;
+}
+
+
+/* =========================================================
+   HOW IT WORKS
+========================================================= */
+
+.steps {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.step {
+
+    text-align: center;
+
+    padding: 25px 20px;
+
+    background: #f5f9ff;
+
+    border-radius: 12px;
+}
+
+
+.step-number {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: #0057c8;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.step h3 {
+
+    color: #0057c8;
+
+    margin-bottom: 10px;
+}
+
+
+.step p {
+
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+/* =========================================================
+   PATIENT PREPARATION
+========================================================= */
+
+.preparation-list {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding-left: 25px;
+}
+
+
+.preparation-list li {
+
+    margin-bottom: 15px;
+
+    line-height: 1.7;
+
+    color: #444;
+}
+
+
+/* =========================================================
+   PRIVACY NOTICE
+========================================================= */
+
+.privacy-notice {
+
+    background: #eef6ff;
+
+    border-left: 5px solid #0057c8;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    line-height: 1.7;
+
+    color: #444;
+}
+
+
+/* =========================================================
+   FINAL CALL TO ACTION
+========================================================= */
+
+.telepharmacy-cta {
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0057c8,
+            #003b87
+        );
+
+    color: white;
+}
+
+
+.telepharmacy-cta h2 {
+
+    color: white;
+
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+
+.telepharmacy-cta p {
+
+    max-width: 750px;
+
+    margin: 0 auto 25px;
+
+    line-height: 1.7;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .telepharmacy-cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .steps {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .telepharmacy-overlay h1 {
+
+        font-size: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .telepharmacy-hero {
+
+        min-height: 600px;
+    }
+
+
+    .telepharmacy-overlay {
+
+        padding:
+            80px 20px
+            50px;
+    }
+
+
+    .telepharmacy-overlay h1 {
+
+        font-size: 34px;
+    }
+
+
+    .telepharmacy-overlay p {
+
+        font-size: 17px;
+    }
+
+
+    .telepharmacy-section {
+
+        width: 94%;
+
+        padding:
+            35px 18px;
+
+        margin:
+            30px auto;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 30px;
+    }
+
+
+    .telepharmacy-cards {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .steps {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .doxy-box {
+
+        padding:
+            30px 20px;
+    }
+
+
+    .doxy-box h3 {
+
+        font-size: 25px;
+    }
+
+
+    .telepharmacy-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .telepharmacy-buttons .btn {
+
+        width: 90%;
+
+        max-width: 330px;
+    }
+
+
+    .calendly-inline-widget {
+
+        height: 720px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .telepharmacy-overlay h1 {
+
+        font-size: 29px;
+    }
+
+
+    .telepharmacy-overlay p {
+
+        font-size: 16px;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 27px;
+    }
+
+
+    .section-heading p {
+
+        font-size: 16px;
+    }
+
+
+    .telepharmacy-section {
+
+        padding:
+            30px 15px;
+    }
+
+}
