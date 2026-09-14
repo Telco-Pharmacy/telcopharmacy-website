@@ -1,1 +1,766 @@
+/* =========================================================
+   TELCO PHARMACY & STORES
+   CAREERS PAGE STYLES
+   File: css/careers.css
+========================================================= */
 
+
+/* =========================================================
+   CAREERS HERO
+========================================================= */
+
+.careers-hero {
+
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 45, 100, 0.58),
+            rgba(0, 45, 100, 0.58)
+        ),
+        url("../images/pharmacy-front.webp");
+
+    background-size: cover;
+
+    background-position: center;
+
+    min-height: 560px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   CAREERS HERO CONTENT
+========================================================= */
+
+.careers-overlay {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 90px 20px 60px;
+}
+
+
+.careers-overlay h1 {
+
+    font-size: 50px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+.careers-overlay p {
+
+    max-width: 850px;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   CAREERS BUTTON GROUP
+========================================================= */
+
+.careers-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.careers-buttons .btn {
+
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+
+/* =========================================================
+   GENERAL CAREERS SECTION
+========================================================= */
+
+.careers-section {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    padding: 45px 30px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.careers-section-heading {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.careers-section-heading h2 {
+
+    color: #0057c8;
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+.careers-section-heading p {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #444;
+}
+
+
+/* =========================================================
+   WHY WORK WITH US
+========================================================= */
+
+.career-benefits {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+.career-benefit {
+
+    background: #f5f9ff;
+
+    border: 1px solid #e1ebf7;
+
+    border-radius: 12px;
+
+    padding: 30px 22px;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.career-benefit:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+.career-benefit-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+.career-benefit h3 {
+
+    color: #0057c8;
+
+    margin-bottom: 12px;
+}
+
+
+.career-benefit p {
+
+    color: #555;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CAREER OPPORTUNITIES
+========================================================= */
+
+.career-opportunities {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.career-opportunity {
+
+    background: #f5f9ff;
+
+    border-left: 5px solid #0057c8;
+
+    border-radius: 10px;
+
+    padding: 28px;
+
+}
+
+
+.career-opportunity h3 {
+
+    color: #0057c8;
+
+    margin-bottom: 12px;
+
+    font-size: 23px;
+}
+
+
+.career-opportunity p {
+
+    color: #555;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+
+.career-opportunity ul {
+
+    margin:
+
+        10px 0 0 20px;
+
+    padding: 0;
+}
+
+
+.career-opportunity li {
+
+    margin-bottom: 8px;
+
+    line-height: 1.6;
+
+    color: #444;
+}
+
+
+/* =========================================================
+   TALENT NETWORK
+========================================================= */
+
+.talent-network {
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef6ff,
+            #f8fbff
+        );
+
+    border-left: 5px solid #0057c8;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    line-height: 1.7;
+}
+
+
+.talent-network h3 {
+
+    color: #0057c8;
+
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+
+.talent-network p {
+
+    color: #444;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   APPLICATION SECTION
+========================================================= */
+
+.application-section {
+
+    overflow: hidden;
+}
+
+
+.application-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.4fr;
+
+    gap: 40px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   APPLICATION INFORMATION
+========================================================= */
+
+.application-info {
+
+    background: #f5f9ff;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    border: 1px solid #e1ebf7;
+}
+
+
+.application-info h3 {
+
+    color: #0057c8;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+.application-info p {
+
+    line-height: 1.7;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+
+.application-info ul {
+
+    padding-left: 22px;
+
+    margin: 0;
+}
+
+
+.application-info li {
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+
+    color: #444;
+}
+
+
+/* =========================================================
+   CAREERS APPLICATION FORM
+========================================================= */
+
+.career-form {
+
+    width: 100%;
+}
+
+
+.career-form-group {
+
+    margin-bottom: 18px;
+}
+
+
+.career-form-group label {
+
+    display: block;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 7px;
+}
+
+
+.career-form-group input,
+.career-form-group select,
+.career-form-group textarea {
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #cfdceb;
+
+    border-radius: 7px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    background: white;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.career-form-group input:focus,
+.career-form-group select:focus,
+.career-form-group textarea:focus {
+
+    outline: none;
+
+    border-color: #0057c8;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 87, 200, 0.10);
+}
+
+
+.career-form-group textarea {
+
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+
+.career-form-group input[type="file"] {
+
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   APPLICATION FORM BUTTON
+========================================================= */
+
+.career-submit {
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   APPLICATION STATUS MESSAGE
+========================================================= */
+
+.career-form-message {
+
+    margin-top: 15px;
+
+    padding: 12px 15px;
+
+    border-radius: 7px;
+
+    display: none;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   PRIVACY NOTICE
+========================================================= */
+
+.careers-privacy {
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    background: #eef6ff;
+
+    border-left: 4px solid #0057c8;
+
+    border-radius: 7px;
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CAREERS CTA
+========================================================= */
+
+.careers-cta {
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0057c8,
+            #003b87
+        );
+
+    color: white;
+}
+
+
+.careers-cta h2 {
+
+    color: white;
+
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+
+.careers-cta p {
+
+    max-width: 750px;
+
+    margin: 0 auto 25px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .career-benefits {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .application-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .careers-hero {
+
+        min-height: 600px;
+    }
+
+
+    .careers-overlay {
+
+        padding:
+            80px 20px 50px;
+    }
+
+
+    .careers-overlay h1 {
+
+        font-size: 36px;
+    }
+
+
+    .careers-overlay p {
+
+        font-size: 17px;
+    }
+
+
+    .careers-section {
+
+        width: 94%;
+
+        padding:
+            35px 18px;
+
+        margin:
+            30px auto;
+    }
+
+
+    .careers-section-heading h2 {
+
+        font-size: 30px;
+    }
+
+
+    .career-benefits {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .career-opportunities {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .careers-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .careers-buttons .btn {
+
+        width: 90%;
+
+        max-width: 330px;
+    }
+
+
+    .application-info {
+
+        padding: 25px 20px;
+    }
+
+
+    .careers-cta h2 {
+
+        font-size: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .careers-overlay h1 {
+
+        font-size: 30px;
+    }
+
+
+    .careers-overlay p {
+
+        font-size: 16px;
+    }
+
+
+    .careers-section-heading h2 {
+
+        font-size: 27px;
+    }
+
+
+    .careers-section-heading p {
+
+        font-size: 16px;
+    }
+
+
+    .careers-section {
+
+        padding:
+            30px 15px;
+    }
+
+
+    .career-benefit {
+
+        padding:
+            25px 18px;
+    }
+
+
+    .career-opportunity {
+
+        padding:
+            23px 20px;
+    }
+
+
+    .careers-cta h2 {
+
+        font-size: 27px;
+    }
+
+}
