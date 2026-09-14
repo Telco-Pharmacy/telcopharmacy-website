@@ -10,6 +10,8 @@ const APP_CONFIG = {
 
         TEMPLATE_ID: "Telco_Template_1elco3",
 
+        CAREERS_TEMPLATE_ID: "Telco_Template_car1elco4",
+
         PUBLIC_KEY: "Zdzxkv8RrP7IN_cPr"
 
     },
