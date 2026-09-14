@@ -15,8 +15,8 @@
 
     background-image:
         linear-gradient(
-            rgba(0, 45, 100, 0.58),
-            rgba(0, 45, 100, 0.58)
+            rgba(0, 45, 100, 0.25),
+            rgba(0, 45, 100, 0.25)
         ),
         url("../images/pharmacy-front.webp");
 
