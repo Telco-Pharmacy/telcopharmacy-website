@@ -1065,32 +1065,26 @@
 
     <script src="js/config.js"></script>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+<script>
+    if (
+        typeof APP_CONFIG !== "undefined" &&
+        APP_CONFIG.EMAILJS &&
+        APP_CONFIG.EMAILJS.PUBLIC_KEY
+    ) {
 
-    <script>
+        emailjs.init({
+            publicKey:
+                APP_CONFIG.EMAILJS.PUBLIC_KEY
+        });
 
-        if (
-            typeof APP_CONFIG !== "undefined" &&
-            APP_CONFIG.EMAILJS &&
-            APP_CONFIG.EMAILJS.PUBLIC_KEY
-        ) {
+    }
+</script>
 
-            emailjs.init({
+<script src="js/script.js"></script>
 
-                publicKey:
-                    APP_CONFIG.EMAILJS.PUBLIC_KEY
-
-            });
-
-        }
-
-    </script>
-
-
-    <script src="js/script.js"></script>
+<script src="js/careers.js"></script>
 
 
 </body>
